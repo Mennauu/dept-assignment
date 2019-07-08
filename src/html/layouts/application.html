@@ -1,0 +1,22 @@
+{% from 'macros/helpers.html' import sprite %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport">
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <meta name="description" content="My Fabolous Dept Assignment">
+    <link rel="stylesheet" href="stylesheets/app.css">
+  </head>
+
+  <body>
+    {% block content %}
+
+    {% endblock %}
+    {% block javascript %}
+    <script src="javascripts/app.js"></script>
+    {% endblock %}
+  </body>
+
+</html>

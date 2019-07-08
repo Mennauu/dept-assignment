@@ -1,0 +1,12 @@
+{
+  "name": "dept-assignment",
+  "version": "1.0.0",
+  "description": "My fabulous Dept assignment",
+  "main": "index.js",
+  "repository": "https://github.com/Mennauu/dept-assignment",
+  "author": "Menno",
+  "license": "MIT",
+  "dependencies": {
+    "blendid": "^4.5.0"
+  }
+}

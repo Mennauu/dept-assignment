@@ -1,3 +1,2 @@
+import 'scroll.js'
 import './modules'
-
-console.log(`app.js has loaded!`)

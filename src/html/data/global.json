@@ -1,3 +1,49 @@
 {
-  "message": "Blendid!"
+  "pages": [
+    {
+      "name": "Home",
+      "slug": "home",
+      "current_page": false
+    },
+    {
+      "name": "Work",
+      "slug": "work",
+      "current_page": true
+    },
+    {
+      "name": "About",
+      "slug": "about",
+      "current_page": false
+    },
+    {
+      "name": "Services",
+      "slug": "services",
+      "current_page": false
+    },
+    {
+      "name": "Partners",
+      "slug": "partners",
+      "current_page": false
+    },
+    {
+      "name": "Stories",
+      "slug": "stories",
+      "current_page": false
+    },
+    {
+      "name": "Vacancies",
+      "slug": "vacancies",
+      "current_page": false
+    },
+    {
+      "name": "Events",
+      "slug": "events",
+      "current_page": false
+    },
+    {
+      "name": "Contact",
+      "slug": "contact",
+      "current_page": false
+    }
+  ]
 }

@@ -1,0 +1,19 @@
+// Colors
+$black: #0e0e0e;
+$black-dark: #000;
+$white: #fff;
+$gray-dark: #272727;
+$gray: #a3a3a3;
+$gray-light: #f3f6f6;
+
+// Fonts
+$font-size-root: 16px;
+$font-family-body: Arial, sans-serif;
+$font-family-heading: 'Teko', sans-serif;
+
+// Spacing
+$template-spacer: 1.25rem;
+
+// Container
+$container-width: calc(1200px + #{$template-spacer * 2})
+

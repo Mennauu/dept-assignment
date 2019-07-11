@@ -1,0 +1,13 @@
+<nav class="navigation-modal">
+  <ul class="navigation__list container">
+    {% for page in pages %}
+    <li class="navigation__item">
+      {% if page.current_page %}
+      <a class="navigation__link navigation__link--active" href="/{{ page.slug }}">{{ page.name }}</a>
+      {% else %}
+      <a class="navigation__link" href="/{{ page.slug }}">{{ page.name }}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

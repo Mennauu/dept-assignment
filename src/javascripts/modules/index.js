@@ -15,11 +15,9 @@ for (var i = 0; i < moduleElements.length; i++) {
 /*
   Usage:
   ======
-
   html
   ----
   <button data-module="disappear">disappear!</button>
-
   js
   --
   // modules/disappear.js

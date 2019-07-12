@@ -45,5 +45,49 @@
       "slug": "contact",
       "current_page": false
     }
+  ],
+  "socials": [
+    {
+      "platform": "Facebook",
+      "url": "https://www.facebook.com/DeptAgency/"
+    },
+    {
+      "platform": "Twitter",
+      "url": "https://twitter.com/deptagency"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/deptagency/"
+    }
+  ],
+  "work": [
+    {
+      "client": "bol.com",
+      "title": "A summer island in the Netherlands",
+      "image": "/images/bolcom.png",
+      "category": "commerce",
+      "industry": "retail & fashion"
+    },
+    {
+      "client": "Kempen",
+      "title": "Not some average banking website",
+      "image": "/images/kempen.png",
+      "category": "branding",
+      "industry": "finance & insurance"
+    },
+    {
+      "client": "Philips",
+      "title": "Beautiful design meets innovative technology",
+      "image": "/images/bolcom.png",
+      "category": "technology",
+      "industry": "utilities"
+    },
+    {
+      "client": "Gemeentemuseum",
+      "title": "A 100 years of Mondriaan & De Stijl",
+      "image": "/images/bolcom.png",
+      "category": "design",
+      "industry": "education"
+    }
   ]
 }

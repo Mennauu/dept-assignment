@@ -8,7 +8,7 @@
 
   &__container {
     width: 100%;
-    max-width: $container-width;
+    max-width: $container;
     margin: auto;
     display: flex;
     align-items: center;
@@ -25,15 +25,14 @@
     min-height: 50px;
     width: 100%;
     transition: 0.4s;
-    padding: 0 $template-spacer;
+    padding: 0 $spacer;
     z-index: 1;
 
     &--dark {
       z-index: 9999;
-      top: 0;
       margin: 0;
       width: 100% !important;
-      padding: 0 $template-spacer !important;
+      padding: 0 $spacer !important;
       background-color: transparent !important;
       border-bottom: 0 !important;
       transition: 0.4s, background-color 1ms;
@@ -42,7 +41,7 @@
         border-bottom: 0 !important;
       }
 
-      .header__logo svg {
+      .header__logo .logo {
         fill: $white;
       }
 
@@ -109,7 +108,7 @@
   }
 
   &__title {
-    margin-left: $template-spacer;
+    margin-left: $spacer;
     padding: 0.75em 0 0.25em 0;
   }
 
@@ -120,9 +119,14 @@
    transition: transform 0.8s;
   }
 
+  @media (min-width: 480px) and (max-width: 1280px) {
+    &__navigation {
+      padding: 0 !important;
+    }
+  }
+
   @media (min-width: 480px) {
-    margin: $template-spacer;
-    padding-top: 0;
+    margin: $spacer $spacer 0 $spacer;
 
     svg {
       height: 28px;
@@ -130,14 +134,25 @@
     }
 
     &__navigation {
-      width: calc(100% - #{$template-spacer * 4});
+      width: calc(100% - #{$spacer * 4});
       background-color: transparent;
       padding: 0;
+
+      &--dark {
+        .header__container {
+          padding: 1.8125rem 1.25rem 1.5625rem 1.25rem;
+          max-width: $container;
+          transform: translateY(-1.25rem);
+        }
+      }
     }
 
     &__container {
       border-bottom: 1px solid $black;
       padding: 1.8125rem 0 1.5625rem 0;
+      max-width: $container-no-spacer;
+      transform: translateY(0);
+      transition: transform 0.3s;
     }
 
     &__title {
@@ -157,23 +172,27 @@
   html:not([data-scroll='0']) {
     .header {
       &__navigation {
-        top: 0;
-        margin: 0;
         width: 100%;
         max-width: 100%;
-        padding: $template-spacer;
+        padding: $spacer;
         background-color: rgba($white, 0.98);
         border-bottom: 1px solid $gray-light;
         padding: 0;
+        margin-top: -1.25rem;
 
         &--dark {
           padding: 0 !important;
+
+          .header__container {
+            transform: translateY(0);
+          }
         }
       }
 
       &__container {
         border-bottom: 0;
         padding: 1.25rem;
+        max-width: $container;
       }
 
       &__logo {

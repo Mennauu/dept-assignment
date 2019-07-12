@@ -1,7 +1,9 @@
 <header class="header">
   <div class="header__navigation">
     <div class="header__container">
-      {% include 'components/header/logo.html' %}
+      <a href="" class="header__logo" href="/">
+        {% include 'components/logo.html' %}
+      </a>
       {% include 'components/header/toggle.html' %}
     </div>
   </div>
@@ -9,5 +11,5 @@
     {% include 'components/header/title.html' %}
     {% include 'components/header/button.html' %}
   </div>
-  {% include 'components/header/navigationModal.html' %}
+  {% include 'components/navigationModal.html' %}
 </header>

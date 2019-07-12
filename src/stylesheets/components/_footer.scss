@@ -1,0 +1,59 @@
+.footer {
+  background-color: $black;
+  padding: 6.25rem 0;
+
+  @media (min-width: 980px) {
+  }
+
+  &__container {
+    display: flex;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $gray-dark;
+    align-items: flex-end;
+  }
+
+  &__logo {
+    display: block;
+    line-height: 0;
+
+    .logo { 
+      fill: $white; 
+    }
+  }
+
+  &__navigation {
+    font-size: 1.125rem;
+    padding-left: 4rem;
+    margin-bottom: calc(-0.5em - 1px);
+  }
+
+  &__socials {
+    margin-left: auto;
+  }
+
+  &__copyright {
+    padding-left: calc(105px + 5.25rem);
+    display: flex;
+    color: $gray-penumbra;
+    padding-top: 3.5rem;
+
+    &-info {
+      a {
+        font-family: $font-family-body;
+        color: $gray-penumbra;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span+span {
+        margin-left: 1.2rem;
+      }
+    }
+
+    &-date {
+      margin-left: auto;
+    }
+  }
+}

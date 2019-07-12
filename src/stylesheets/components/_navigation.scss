@@ -1,0 +1,19 @@
+.navigation {
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    color: $white;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__item+&__item {
+    margin-left: 1.75rem;
+  }
+}

@@ -1,8 +1,12 @@
 @import "variables";
 @import "base/base";
 @import "base/typography";
-@import "base/containers";
+@import "components/containers";
 @import "components/buttons";
+@import "components/logo";
 @import "components/header";
+@import "components/navigation";
 @import "components/navigationModal";
 @import "components/filter";
+@import "components/footer";
+@import "components/socials";

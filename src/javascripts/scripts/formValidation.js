@@ -12,6 +12,10 @@
       if (event.target.value.length > 0 && event.target.validity.valid) {
         error.innerText = ""
         event.target.classList.add('valid')
+
+        if (error.classList.contains('contact__error--active')) {
+          error.classList.remove('contact__error--active')
+        }
       } else if (input.classList.contains('valid')) {
         event.target.classList.remove('valid')
       }
@@ -25,6 +29,7 @@
       if (element.name && element.value.length === 0) {
         const error = document.querySelector(`.contact__error--${element.name}`)
         error.innerText = ""
+        error.classList.add('contact__error--active')
         error.insertAdjacentHTML('afterbegin', 'This field is required')
 
         event.preventDefault()
@@ -33,6 +38,7 @@
       if (element.name === 'email' && element.value.length > 0 && !element.validity.valid) {
         const error = document.querySelector(`.contact__error--${element.name}`)
         error.innerText = ""
+        error.classList.add('contact__error--active')
         error.insertAdjacentHTML('afterbegin', 'Please insert a valid email address')
 
         event.preventDefault()

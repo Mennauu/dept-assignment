@@ -1,25 +1,56 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-heading;
+  margin: 0;
 }
  
 h1 {
   font-size: calc(170px + (310 - 170) * ((100vw - 480px) / (1200 - 480)));
   color: $black;
   text-transform: uppercase;
-  margin: 0;
 }
 
 h2 {
   font-size: 3.75rem;
   color: $black;
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: 1.875rem;
   color: $gray-dark;
+  line-height: 1.07;
 }
 
 a {
   font-family: $font-family-heading;
   text-decoration: none;
+}
+
+label {
+  font-size: calc(24px + (30 - 24) * ((100vw - 480px) / (1200 - 480)));
+  color: $gray;
+}
+
+p {
+  color: $black;
+  font-size: 1.0625rem;
+  margin: 0;
+
+}
+
+blockquote {
+  font-family: $font-family-heading;
+  font-size: calc(24px + (36 - 24) * ((100vw - 480px) / (1200 - 480)));
+  color: $gray-darkest;
+  line-height: 1.28;
+  margin: 0;
+}
+
+cite {
+  font-family: $font-family-body;
+  font-size: 0.8125rem;
+  color: $gray-darkest;
+  font-style: normal;
+  font-weight: bold;
+  display: block;
 }

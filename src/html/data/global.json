@@ -60,34 +60,114 @@
       "url": "https://www.instagram.com/deptagency/"
     }
   ],
-  "work": [
+  "projects": [
     {
       "client": "bol.com",
       "title": "A summer island in the Netherlands",
-      "image": "/images/bolcom.png",
+      "image": "bolcom",
       "category": "commerce",
       "industry": "retail & fashion"
     },
     {
       "client": "Kempen",
       "title": "Not some average banking website",
-      "image": "/images/kempen.png",
+      "image": "kempen",
       "category": "branding",
       "industry": "finance & insurance"
     },
     {
       "client": "Philips",
       "title": "Beautiful design meets innovative technology",
-      "image": "/images/bolcom.png",
+      "image": "philips",
       "category": "technology",
       "industry": "utilities"
     },
     {
       "client": "Gemeentemuseum",
       "title": "A 100 years of Mondriaan & De Stijl",
-      "image": "/images/bolcom.png",
+      "image": "gemeentemuseum",
       "category": "design",
       "industry": "education"
+    },
+    {
+      "client": "Microsoft",
+      "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+      "image": null,
+      "category": "marketing",
+      "industry": "non-profit"
+    },
+    {
+      "client": "O'Neil",
+      "title": "Integrating existing content into O’Neill’s new e-commerce platform",
+      "image": null,
+      "category": "commerce",
+      "industry": "retail & fashion"
+    }
+  ],
+  "clients": [
+    {
+      "client": "ABN Amro",
+      "image": "abnamro"
+    },
+    {
+      "client": "Adidas",
+      "image": "adidas"
+    },
+    {
+      "client": "KLM",
+      "image": "klm"
+    },
+    {
+      "client": "Microsoft",
+      "image": "microsoft"
+    },
+    {
+      "client": "Mona",
+      "image": "mona"
+    },
+    {
+      "client": "Nationale Nederlanden",
+      "image": "nationalenederlanden"
+    },
+    {
+      "client": "Nivea",
+      "image": "nivea"
+    },
+    {
+      "client": "Oxxio",
+      "image": "oxxio"
+    },
+    {
+      "client": "Pathe",
+      "image": "pathe"
+    },
+    {
+      "client": "TomTom",
+      "image": "tomtom"
+    },
+    {
+      "client": "Transavia",
+      "image": "transavia"
+    },
+    {
+      "client": "Triumph",
+      "image": "triumph"
+    },
+    {
+      "client": "Unilever",
+      "image": "unilever"
+    },
+    {
+      "client": "Walibi",
+      "image": "walibi"
+    },
+    {
+      "client": "Zalando",
+      "image": "zalando"
+    },
+    {
+      "client": "Ziggo",
+      "image": "ziggo"
     }
   ]
 }

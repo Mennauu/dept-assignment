@@ -70,6 +70,7 @@
     &__item {
       border-bottom: 1px solid rgba($gray, 0.5);
       padding-top: 0.5rem;
+      margin-right: 0;
   
       @media (min-width: 480px) {
         padding-top: 1rem;
@@ -78,10 +79,6 @@
       &:last-of-type {
         border-bottom: 0;
       }
-    }
-
-    &__item+&__item {
-      margin-left: 0;
     }
   
     &__link {

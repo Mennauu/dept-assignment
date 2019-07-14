@@ -1,0 +1,103 @@
+.contact {
+  padding: 2.5rem 1.25rem 4rem 1.25rem;
+
+  &__title {
+    font-family: $font-family-heading;
+    font-size: calc(30px + (60 - 30) * ((100vw - 480px) / (1200 - 480)));
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  &__form {
+    label {
+      font-size: 0.9375rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $gray-darkest;
+      width: 100%;
+      display: block;
+    }
+
+    legend {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    input[type="submit"] {
+      margin-top: 1rem;
+      width: initial;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: $red;
+    font-size: 0.8125rem;
+    display: block;
+
+    &--message {
+      bottom: 0.45rem;
+    }
+  }
+
+  .input-container {
+    position: relative;
+    padding-bottom: 2rem;
+  }
+
+  .valid {
+    border-bottom: 1px solid green;
+  }
+
+
+  @media (min-width: 780px) and (max-width: 980px) {
+    &__title {
+      padding-right: 3rem !important;
+    }
+  }
+
+  @media (min-width: 780px) {
+    display: flex;
+    padding: 5rem 0;
+
+    &__title {
+      text-align: left;
+      flex: 1 0 calc(100% / 3);
+      padding-right: 7.5rem;
+      margin-bottom: 5rem;
+    }
+
+    &__form {
+      flex: 1 0 calc((100% / 3) * 2);
+
+      input {
+        max-width: 80%;
+      }
+
+      textarea {
+        max-width: 40%;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      padding-bottom: 1rem;
+      margin-bottom: 4rem;
+
+      .input-container {
+        width: 100%;
+      }
+    }
+  }
+}

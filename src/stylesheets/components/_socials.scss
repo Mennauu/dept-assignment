@@ -10,11 +10,18 @@
   }
 
   &__image {
-    width: 0.875rem;
-    height: 0.875rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   &__item+&__item {
     margin-left: 1.8rem;
+  }
+
+  @media (min-width: 480px) {
+    &__image {
+      width: 0.875rem;
+      height: 0.875rem;
+    }
   }
 }

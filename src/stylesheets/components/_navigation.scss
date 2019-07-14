@@ -2,6 +2,7 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__link {
@@ -13,7 +14,7 @@
     }
   }
 
-  &__item+&__item {
-    margin-left: 1.75rem;
+  &__item {
+    margin-right: 1.75rem;
   }
 }

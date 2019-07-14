@@ -1,0 +1,16 @@
+{% for project in projects %}
+<article class="article">
+  <a class="article__wrapper" href="#">
+    {% if project.image %}
+    <picture class="article__image">
+      <source srcset="/images/{{ project.image }}.webp" type="image/webp">
+      <source srcset="/images/{{ project.image }}.png" type="image/png">
+      <img class="article__image" src="/images/{{ project.image }}.png" alt="{{ project.client }}">
+    </picture>
+    {% endif %}
+    <span class="article__label">{{ project.client }}</span>
+    <h3 class="article__title">{{ project.title }}</h3>
+    <span class="article__link" href="#">View case</span>
+  </a>
+</article>
+{% endfor %}

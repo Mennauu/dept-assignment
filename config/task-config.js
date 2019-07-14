@@ -3,7 +3,7 @@ module.exports = {
   images: true,
   fonts: true,
   static: true,
-  svgSprite: true,
+  svgSprite: false,
   ghPages: true,
   stylesheets: true,
 
@@ -13,6 +13,10 @@ module.exports = {
       // javascripts.dest in path-config.json
       app: ["./app.js"],
     }
+  },
+
+  images: {
+    extensions: ["webp", "jpg", "png", "svg", "gif"]
   },
 
   browserSync: {

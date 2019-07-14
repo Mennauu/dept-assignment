@@ -1,0 +1,17 @@
+<section class="clients">
+  <div class="container">
+    <h2>Clients</h2>
+    <p class="clients__description">We value a great working relationship with our clients above all else. It’s why they
+      often come to our parties.
+      It’s also why we’re able to challenge and inspire them to reach for the stars.</p>
+    <div class="clients__images-container">
+      {% for client in clients %}
+      <picture class="clients__image">
+        <source srcset="/images/logos/{{ client.image }}.webp" type="image/webp">
+        <source srcset="/images/logos/{{ client.image }}.png" type="image/png">
+        <img class="clients__image" src="/images/logos/{{ client.image }}.png" alt="{{ client.client }}">
+      </picture>
+      {% endfor %}
+    </div>
+  </div>
+</section>

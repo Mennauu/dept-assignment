@@ -1,0 +1,10 @@
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: 480px) {
+    > .article:nth-child(even) {
+      margin-left: 1.875rem;
+    }
+  }
+}

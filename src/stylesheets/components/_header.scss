@@ -26,7 +26,8 @@
     width: 100%;
     transition: 0.4s;
     padding: 0 $spacer;
-    z-index: 1;
+    z-index: 2;
+    border-bottom: 1px solid $gray-lightest;
 
     &--dark {
       z-index: 9999;
@@ -62,7 +63,17 @@
           transform: rotate(-45deg);
         }
 
-        &--label {
+        &:hover {
+          &::after {
+            transform: rotate(45deg)
+          }
+    
+          &::before {
+            transform: rotate(-45deg)
+          }
+        }
+
+        &-label {
           opacity: 0;
         }
       }
@@ -92,6 +103,7 @@
       height: 0.125rem;
       background-color: $black;
       transition: 0.2s;
+      transform: translateY(0)
     }
 
     &::after {
@@ -103,12 +115,18 @@
     }
 
     &:hover {
-      text-decoration: underline;
+
+      &::after {
+        transform: translateY(1px)
+      }
+
+      &::before {
+        transform: translateY(-1px)
+      }
     }
   }
 
   &__title {
-    margin-left: $spacer;
     padding: 0.75em 0 0.25em 0;
   }
 
@@ -137,6 +155,7 @@
       width: calc(100% - #{$spacer * 4});
       background-color: transparent;
       padding: 0;
+      border-bottom: 0;
 
       &--dark {
         .header__container {
@@ -176,7 +195,7 @@
         max-width: 100%;
         padding: $spacer;
         background-color: rgba($white, 0.98);
-        border-bottom: 1px solid $gray-light;
+        border-bottom: 1px solid $gray-lightest;
         padding: 0;
         margin-top: -1.25rem;
 

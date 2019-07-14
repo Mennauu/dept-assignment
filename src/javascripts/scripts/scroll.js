@@ -13,8 +13,10 @@ const debounce = (fn) => {
     frame = requestAnimationFrame(() => fn(...params))
   }
 }
+
 const storeScroll = () => document.documentElement.dataset.scroll = window.scrollY
 
-document.addEventListener('scroll', debounce(storeScroll), { passive: true })
+const scrollListener = () => document.addEventListener('scroll', debounce(storeScroll), { passive: true })
 
+scrollListener()
 storeScroll()

@@ -7,7 +7,6 @@
   "author": "Menno",
   "license": "MIT",
   "dependencies": {
-    "blendid": "^4.5.0",
-    "gulp-webp": "^4.0.1"
+    "blendid": "^4.5.0"
   }
 }

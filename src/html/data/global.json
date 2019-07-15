@@ -66,42 +66,144 @@
       "title": "A summer island in the Netherlands",
       "image": "bolcom",
       "category": "commerce",
-      "industry": "retail & fashion"
+      "industry": "retail",
+      "position": "initial-medium"
     },
     {
       "client": "Kempen",
       "title": "Not some average banking website",
       "image": "kempen",
       "category": "branding",
-      "industry": "finance & insurance"
+      "industry": "finance",
+      "position": "initial-medium"
     },
     {
       "client": "Philips",
       "title": "Beautiful design meets innovative technology",
       "image": "philips",
       "category": "technology",
-      "industry": "utilities"
+      "industry": "utilities",
+      "position": "initial-medium"
     },
     {
       "client": "Gemeentemuseum",
       "title": "A 100 years of Mondriaan & De Stijl",
       "image": "gemeentemuseum",
       "category": "design",
-      "industry": "education"
+      "industry": "education",
+      "position": "initial-medium"
+    },
+    {
+      "client": "Florensis",
+      "title": "Rethinking the entire online ecosystem",
+      "image": "florensis",
+      "category": "strategy",
+      "industry": "b2b",
+      "position": "initial-big"
     },
     {
       "client": "Microsoft",
       "title": "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
       "image": null,
-      "category": "marketing",
-      "industry": "non-profit"
+      "category": null,
+      "industry": null,
+      "position": "initial-big"
     },
     {
       "client": "O'Neil",
       "title": "Integrating existing content into O’Neill’s new e-commerce platform",
       "image": null,
+      "category": null,
+      "industry": null,
+      "position": "initial-big"
+    },
+    {
+      "client": "Be lightning",
+      "title": "Delivering clarity on a global scale",
+      "image": "lightning",
+      "category": "technology",
+      "industry": "b2b",
+      "position": "initial-small"
+    },
+    {
+      "client": "TUI",
+      "title": "Swipe to find your next holiday destination",
+      "image": "tui",
+      "category": "content",
+      "industry": "travel",
+      "position": "initial-small"
+    },
+    {
+      "client": "Butlins",
+      "title": "Enhancing customer experience for personalised holiday planning using real time data",
+      "image": null,
+      "category": null,
+      "industry": null,
+      "position": "secondary-big"
+    },
+    {
+      "client": "Vacansesel",
+      "title": "Predicting booking behavior for holidays with smart data, voice search and machine learning",
+      "image": null,
+      "category": null,
+      "industry": null,
+      "position": "secondary-big"
+    },
+    {
+      "client": "Florensis",
+      "title": "Rethinking the entire online ecosystem",
+      "image": "florensis",
+      "category": "strategy",
+      "industry": "b2b",
+      "position": "secondary-big"
+    },
+    {
+      "client": "Chocomel",
+      "title": "A campaign for the limited edition letter packs",
+      "image": "chocomel",
+      "category": "marketing",
+      "industry": "retail",
+      "position": "secondary-medium"
+    },
+    {
+      "client": "JBL",
+      "title": "Live like a champion with Jerome Booteng",
+      "image": "jbl",
+      "category": "marketing",
+      "industry": "retail",
+      "position": "secondary-medium"
+    },
+    {
+      "client": "Zalando",
+      "title": "Innovative SEO and content strategy for Zalando",
+      "image": "zalando",
+      "category": "content",
+      "industry": "b2b",
+      "position": "secondary-medium"
+    },
+    {
+      "client": "Koninklijke Bibliotheek",
+      "title": "The search for the most influential book ever",
+      "image": "koninklijke-bibliotheek",
+      "category": "branding",
+      "industry": "non-profit",
+      "position": "secondary-medium"
+    },
+    {
+      "client": "Liberty Global",
+      "title": "Delivering complex commerce solutions",
+      "image": "liberty-global",
       "category": "commerce",
-      "industry": "retail & fashion"
+      "industry": "retail",
+      "position": "secondary-small"
+    },
+    {
+      "client": "Arla",
+      "title": "Swipe to find your next holiday destination",
+      "image": "arla",
+      "category": "design",
+      "industry": "retail",
+      "position": "secondary-small"
     }
   ],
   "clients": [

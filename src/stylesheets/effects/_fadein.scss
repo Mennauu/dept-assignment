@@ -1,0 +1,11 @@
+.fadeIn {
+  animation: come-in 1s ease forwards;
+}
+
+.js-animated {
+  transform: translateY(0) !important;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}

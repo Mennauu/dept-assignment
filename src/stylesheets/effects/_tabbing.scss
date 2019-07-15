@@ -1,0 +1,29 @@
+body:not(.is-tabbing) button:focus,
+body:not(.is-tabbing) input:focus,
+body:not(.is-tabbing) select:focus,
+body:not(.is-tabbing) textarea:focus {
+  outline: none;
+}
+
+a.skip-nav {
+  font-family: $font-family-body;
+  left: -9999px;
+  position:absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -9999;
+}
+a.skip-nav:focus, a.skip-nav:active {
+  color: $white;
+  background-color: rgba($black, 0.9);
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 9999;
+}

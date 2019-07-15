@@ -1,3 +1,69 @@
 <div class="projects-container">
-  {% include 'components/main/article.html' %}
+  <div class="projects__block projects__block--medium" data-animate data-animation-classes="animated fadeIn">
+    {% for project in projects %}
+    {% if project.position == 'initial-medium' %}
+    {% include 'components/main/article.html' %}
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div class="projects__block projects__block--big projects__block--right" data-animate
+    data-animation-classes="animated fadeIn">
+    {% for project in projects %}
+    {% if project.position == 'initial-big' %}
+    {% if project.image %}
+    {% include 'components/main/article.html' %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    <div class="projects__wrapper">
+      {% for project in projects %}
+      {% if project.position == 'initial-big' %}
+      {% if not project.image %}
+      {% include 'components/main/article.html' %}
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="projects__block projects__block--small" data-animate data-animation-classes="animated fadeIn">
+    {% for project in projects %}
+    {% if project.position == 'initial-small' %}
+    {% include 'components/main/article.html' %}
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div class="projects__block projects__block--big projects__block--left" data-animate
+    data-animation-classes="animated fadeIn">
+    <div class="projects__wrapper">
+      {% for project in projects %}
+      {% if project.position == 'secondary-big' %}
+      {% if not project.image %}
+      {% include 'components/main/article.html' %}
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% for project in projects %}
+    {% if project.position == 'secondary-big' %}
+    {% if project.image %}
+    {% include 'components/main/article.html' %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div class="projects__block projects__block--medium" data-animate data-animation-classes="animated fadeIn">
+    {% for project in projects %}
+    {% if project.position == 'secondary-medium' %}
+    {% include 'components/main/article.html' %}
+    {% endif %}
+    {% endfor %}
+  </div>
+  {% include 'components/quote.html' %}
+  <div class="projects__block projects__block--small" data-animate data-animation-classes="animated fadeIn">
+    {% for project in projects %}
+    {% if project.position == 'secondary-small' %}
+    {% include 'components/main/article.html' %}
+    {% endif %}
+    {% endfor %}
+  </div>
 </div>

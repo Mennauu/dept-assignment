@@ -1,20 +1,36 @@
 <div class="filter">
   <div class="filter__group">
     <label for="work">Show me</label>
-    <select name="work">
-      <option>all work</option>
-      {% for work in projects %}
-      <option>{{ work.category }}</option>
-      {% endfor %}
-    </select>
+    <div class="select-wrapper">
+      <select name="work" id="work" tabindex="-1">
+        <option>all work</option>
+        {% set categories = [] %}
+        {% for work in projects %}
+        {% if work.category not in categories and work.category != null %}
+        {% set categories = (categories.push(work.category), categories) %}
+        {% endif %}
+        {% endfor %}
+        {% for category in categories %}
+        <option>{{ category }}</option>
+        {% endfor %}
+      </select>
+    </div>
   </div>
   <div class="filter__group">
     <label for="industry">in</label>
-    <select>
-      <option>all industries</option>
-      {% for work in projects %}
-      <option>{{ work.industry }}</option>
-      {% endfor %}
-    </select>
+    <div class="select-wrapper">
+      <select name="industry" id="industry" tabindex="-1">
+        <option>all industries</option>
+        {% set industries = [] %}
+        {% for work in projects %}
+        {% if work.industry not in industries and work.industry != null %}
+        {% set industries = (industries.push(work.industry), industries) %}
+        {% endif %}
+        {% endfor %}
+        {% for industry in industries %}
+        <option>{{ industry }}</option>
+        {% endfor %}
+      </select>
+    </div>
   </div>
 </div>

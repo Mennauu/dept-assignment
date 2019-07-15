@@ -1,10 +1,112 @@
 .projects-container {
-  display: flex;
-  flex-wrap: wrap;
 
-  @media (min-width: 480px) {
-    > .article:nth-child(even) {
-      margin-left: 1.875rem;
+  .projects__block {
+    transform: translateY(110px);
+
+    &--big {
+      .projects__wrapper {
+        .article {
+          border-top: 1px solid $gray-light;
+          padding-top: 0.625rem;
+          padding-bottom: 2rem;
+          margin-right: 2rem;
+
+          &:last-of-type {
+            border-bottom: 1px solid $gray-light;
+          }
+        }
+      }
+    }
+
+    &--right {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &--left,
+    &--right {
+      .projects__wrapper {
+        .article {
+          &:last-of-type {
+            border-bottom: 0;
+          }
+        }
+      }
     }
   }
+
+  @media (min-width: 480px) {
+
+    .projects__block {
+      display: flex;
+      flex-wrap: wrap;
+
+      &--medium,
+      &--small {
+        .article {
+          flex: 1 0 calc(50% - 1.875rem);
+        }
+
+        .article:nth-child(even) {
+          margin-left: 1.875rem;
+        }
+      }
+
+      &--big {
+
+        > .article {
+          flex: 1 0 100%;
+        }
+
+        .projects__wrapper {
+          display: flex;
+          flex-direction: row;
+          flex: 1 0 calc(100% / 2);
+          padding-right: 0;
+
+          @media (min-width: $container-no-spacer) {
+            padding-right: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 980px) {
+    .projects__block {
+      &--right {
+        flex-direction: row;
+
+        > .article {
+          margin-right: 2.625rem;
+        }
+      }
+
+      &--left {
+        > .article {
+          margin-left: 2.625rem;
+        }
+      }
+
+      &--big {
+        > .article {
+          flex: 1 0 calc(((100% / 3) * 2) - 2.625rem);
+        }
+  
+        .projects__wrapper {
+          flex-direction: column;
+          flex: 1 0 calc(100% / 3);
+        }
+      }
+    }
+  }
+  
 }
+
+//   @media (min-width: 480px) {
+
+//     > .article:nth-child(even) {
+//       margin-left: 1.875rem;
+//     }
+//   }
+// }

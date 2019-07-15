@@ -3,22 +3,22 @@
 
   <form class="contact__form" novalidate>
     <fieldset>
-      <legend>Contact form</legend>
+      <legend class="hidden">Contact form</legend>
       <div class="contact__wrapper">
         <div class="input-container">
           <label for="name">Name</label>
-          <input type="text" name="name" id="name">
+          <input type="text" name="name" id="name" aria-required="true">
           <span class="contact__error contact__error--name" aria-live="error"></span>
         </div>
         <div class="input-container">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email">
+          <input type="email" name="email" id="email" aria-required="true">
           <span class="contact__error contact__error--email" aria-live="error"></span>
         </div>
       </div>
       <div class="input-container">
         <label for="message">Message</label>
-        <textarea name="message" id="message"></textarea>
+        <textarea name="message" id="message"></textarea aria-required="true">
         <span class="contact__error contact__error--message" aria-live="error"></span>
       </div>
     </fieldset>

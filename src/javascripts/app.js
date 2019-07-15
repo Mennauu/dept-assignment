@@ -1,3 +1,8 @@
+import 'lazysizes'
+import './scripts/animate.js'
 import './scripts/scroll.js'
+import './scripts/tabbed.js'
+import './scripts/selectResizer.js'
 import './scripts/formValidation.js'
+import './scripts/filterProjects.js'
 import './modules'

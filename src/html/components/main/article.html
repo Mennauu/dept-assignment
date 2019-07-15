@@ -1,11 +1,13 @@
-{% for project in projects %}
 <article class="article">
-  <a class="article__wrapper" href="#">
+  <a class="article__wrapper" href="#" title="Case: {{ project.client }}">
     {% if project.image %}
     <picture class="article__image">
-      <source srcset="/images/{{ project.image }}.webp" type="image/webp">
-      <source srcset="/images/{{ project.image }}.png" type="image/png">
-      <img class="article__image" src="/images/{{ project.image }}.png" alt="{{ project.client }}">
+      <source srcset="/images/lazy/{{ project.image }}.webp" data-srcset="/images/{{ project.image }}.webp"
+        type="image/webp">
+      <source srcset="/images/lazy{{ project.image }}.jpg" data-srcset="/images/{{ project.image }}.jpg"
+        type="image/jpg">
+      <img class="article__image lazyload blur-up" src="/images/lazy/{{ project.image }}.jpg"
+        data-src="/images/{{ project.image }}.jpg" alt="{{ project.client }}">
     </picture>
     {% endif %}
     <span class="article__label">{{ project.client }}</span>
@@ -13,4 +15,3 @@
     <span class="article__link" href="#">View case</span>
   </a>
 </article>
-{% endfor %}

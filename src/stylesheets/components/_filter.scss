@@ -7,6 +7,10 @@
   justify-content: flex-end;
   flex-direction: column;
 
+  &__group {
+    display: flex;
+  }
+
   @media (min-width: 480px) {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
@@ -18,4 +22,29 @@
       }
     }
   }
+
+  select {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    display: inline;
+  }
+
+  .select-wrapper {
+    position: relative;
+  }
+
+  .select-wrapper::after {
+    content: '\0025BE';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $black;
+    pointer-events: none;
+  }
+}
+
+.dummy {
+  position: absolute;
+  left: -10000px;
 }

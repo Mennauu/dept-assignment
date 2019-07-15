@@ -32,6 +32,8 @@ button {
   font-size: 1.125rem;
   cursor: pointer;
   text-transform: uppercase;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 select {
@@ -84,6 +86,8 @@ input[type="submit"] {
   font-weight: bold;
   font-size: 0.9375rem;
   cursor: pointer;
+  -webkit-appearance: none;
+  border-radius: 0;
 
   &:hover {
     background-color: darken($blue, 10%);

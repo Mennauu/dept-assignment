@@ -1,24 +1,25 @@
 {% from 'macros/helpers.html' import sprite %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
   <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport">
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+      name="viewport"
+    />
     <title>{% block title %}{{ title }}{% endblock %}</title>
-    <meta name="description" content="My Fabolous Dept Assignment">
+    <meta name="description" content="My Fabolous Dept Assignment" />
     {% include "shared/app-icons.html" %}
-    <link rel="stylesheet" href="stylesheets/app.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko:300&display=swap">
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Teko:300&display=swap"
+    />
   </head>
 
   <body>
-    {% block content %}
-
-    {% endblock %}
-    {% block javascript %}
+    {% block content %} {% endblock %} {% block javascript %}
     <script src="javascripts/app.js"></script>
     {% endblock %}
   </body>
-
 </html>
